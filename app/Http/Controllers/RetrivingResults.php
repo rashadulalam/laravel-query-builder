@@ -25,4 +25,11 @@ class RetrivingResults extends Controller
         $results = DB::table('students')->find(1);
         return $results;
     }
+
+    public function selectOneColumn()
+    {
+        $results = DB::table('students')->pluck('name');
+
+        return $results;
+    }
 }
