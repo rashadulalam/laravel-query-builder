@@ -22,3 +22,5 @@ Route::get('/column', [RetrivingResults::class, 'selectOneColumn']);
 
 Route::get('/multi-column', [RetrivingResults::class, 'multiColumn']);
 
+Route::get('/spdata', [RetrivingResults::class, 'spData']);
+

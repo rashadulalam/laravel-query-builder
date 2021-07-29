@@ -38,4 +38,10 @@ class RetrivingResults extends Controller
         $results = DB::table('students')->pluck('name', 'roll');
         return $results;
     }
+
+    public function spData()
+    {
+        $results = DB::table('students')->where('id', '=', '1')->value('name');
+        return $results;
+    }
 }
