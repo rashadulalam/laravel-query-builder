@@ -14,3 +14,5 @@ use App\Http\Controllers\RetrivingResults;
 */
 
 Route::get('/', [RetrivingResults::class, 'allRows']);
+
+Route::get('/single-row', [RetrivingResults::class, 'selectOneRow']);
