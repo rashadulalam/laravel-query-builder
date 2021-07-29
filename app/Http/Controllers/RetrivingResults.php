@@ -32,4 +32,10 @@ class RetrivingResults extends Controller
 
         return $results;
     }
+
+    public function multiColumn()
+    {
+        $results = DB::table('students')->pluck('name', 'roll');
+        return $results;
+    }
 }

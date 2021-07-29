@@ -19,3 +19,6 @@ Route::get('/single-row', [RetrivingResults::class, 'selectOneRow']);
 Route::get('/find-row', [RetrivingResults::class, 'findRows']);
 
 Route::get('/column', [RetrivingResults::class, 'selectOneColumn']);
+
+Route::get('/multi-column', [RetrivingResults::class, 'multiColumn']);
+
