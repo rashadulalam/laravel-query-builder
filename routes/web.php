@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RetrivingResults;
+
+use  App\Http\Controllers\AggregatesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,4 +25,8 @@ Route::get('/column', [RetrivingResults::class, 'selectOneColumn']);
 Route::get('/multi-column', [RetrivingResults::class, 'multiColumn']);
 
 Route::get('/spdata', [RetrivingResults::class, 'spData']);
+
+
+
+Route::get('/count-row', [AggregatesController::class, 'countRow']);
 
