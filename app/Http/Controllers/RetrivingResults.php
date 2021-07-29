@@ -19,4 +19,10 @@ class RetrivingResults extends Controller
 
         return $results;
     }
+
+    public function findRows()
+    {
+        $results = DB::table('students')->find(1);
+        return $results;
+    }
 }
